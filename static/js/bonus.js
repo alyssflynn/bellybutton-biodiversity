@@ -28,7 +28,8 @@ function buildGauge(wfreq) {
       marker: { size: 12, color: "850000" },
       showlegend: false,
       name: "Freq",
-      text: level,
+      // text: level,
+      text: wfreq,
       hoverinfo: "text+name"
     },
     {
@@ -60,16 +61,12 @@ function buildGauge(wfreq) {
   ];
 
   var layout = {
-    shapes: [
-      {
-        type: "path",
-        path: path,
-        fillcolor: "850000",
-        line: {
-          color: "850000"
-        }
-      }
-    ],
+    shapes: [{ 
+      type: "path",
+      path: path,
+      fillcolor: "850000",
+      line: { color: "850000" },
+    }],
     title: "<b>Belly Button Washing Frequency</b> <br> Scrubs per Week",
     height: 500,
     width: 500,

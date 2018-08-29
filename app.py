@@ -9,8 +9,6 @@ from sqlalchemy.orm import Session
 from sqlalchemy import create_engine
 
 from flask import Flask, jsonify, render_template
-# import flask_sqlalchemy
-# from flask_sqlalchemy import *
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
@@ -101,4 +99,4 @@ def samples(sample):
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
